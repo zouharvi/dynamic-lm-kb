@@ -1,4 +1,4 @@
-# Limited LM KB
+# Dynamic LM KB
 
 Coarse prototype of LM with limited KB access. Assume `data/brown.txt`.
 Features are: `(top 4 logits, top 4 softmax probs)`, prediction is `(masked word in top 8 predictions)`. Currently context of 8+8 is given to the BERT model (`bert-base-cased`). The top 8 accuracy is `53.71%`. 
